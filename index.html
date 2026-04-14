@@ -4,9 +4,231 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarambi - Dietética y Almacén Natural</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicon_io_s/favicon.ico">
 </head>
 <body>
-    <h1>¡Bienvenidos a Sarambi!</h1>
-    <p>Dietética, almacén natural y verdulería.</p>
+
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <nav class="contenedor">
+            <div class="logo-nav">
+                <img src="img/logo-sarambi.png" alt="Sarambi">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#encontranos">Encontranos</a></li>
+            </ul>
+
+            <div class="nav-redes">
+                <a href="https://www.instagram.com/sarambi.almacen.natural/" target="_blank" title="Instagram">📸</a>
+                <a href="https://wa.me/5493517733507" target="_blank" title="WhatsApp">💬</a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Menú móvil -->
+        <ul class="nav-mobile" id="nav-mobile">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#encontranos">Enconranos</a></li>
+        </ul>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="hero">
+        <div class="hero-contenido">
+            <img src="img/logo-sarambi.png" alt="Sarambi" class="logo-hero">
+            
+            <h1>Sarambi</h1>
+            <p>Productos naturales, almacén orgánico y verdulería fresca.
+               <br>Tu bienestar es nuestra prioridad.</p>
+            
+            <div class="hero-botones">
+                <a href="https://wa.me/5493517733507" target="_blank" class="btn btn-primario">
+                    Escribinos por WhatsApp 💬
+                </a>
+                <a href="#productos" class="btn btn-outline">
+                    Ver nuestros productos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== QUIENES SOMOS ==================== -->
+    <section id="quienes-somos">
+        <div class="contenedor">
+            <div class="seccion-titulo">
+                <h2>Quiénes Somos</h2>
+                <p>Conocé la historia detrás de Sarambi</p>
+            </div>
+
+            <div class="quienes-somos-grid">
+                <div class="quienes-somos-texto">
+                    <h3>Nuestra Historia</h3>
+                    <!-- REEMPLAZAR: Escribir tu historia -->
+                    <p>
+                        Sarambi nació con la misión de traer productos naturales y de calidad 
+                        a nuestra comunidad. Con años de experiencia en el rubro, nos esforzamos 
+                        por ofrecer lo mejor para tu mesa.
+                    </p>
+                    <p>
+                        Somos más que una dietética: somos un lugar donde la calidad, el servicio 
+                        y la calidez humana se encuentran.
+                    </p>
+                    
+                    <h3 style="margin-top: 30px;">Nuestros Valores</h3>
+                    <p>🤝 <strong>Atención personalizada</strong></p>
+                    <p>💚 <strong>Compromiso con tu salud</strong></p>
+                    <p>📦 <strong>Selección cuidada</strong></p>
+                </div>
+
+                <div class="quienes-somos-imagen">
+                    <!-- REEMPLAZAR: Agregar foto del local o familia -->
+                    <img src="img/Foto-sarambi .JPG.jpeg" alt="Nuestro local">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRODUCTOS ==================== -->
+    <section id="productos">
+        <div class="contenedor">
+            <div class="seccion-titulo">
+                <h2>Nuestros Productos</h2>
+                <p>Selección de productos naturales para tu bienestar</p>
+            </div>
+
+            <div class="productos-grid">
+                
+                <article class="producto-card">
+                    <img src="img/1.jpeg" alt="Variedad de granos y cereales orgánicos en Sarambi">
+                    <h3>Granos y Cereales</h3>
+                    <p>Gran variedad de granos, semillas y cereales orgánicos de primera calidad.</p>
+                </article>
+
+                <article class="producto-card">
+                    <img src="img/2.jpeg" alt="Frutas y verduras frescas">
+                    <h3>Frutas y Verduras Frescas</h3>
+                    <p>Selección diaria de frutas y verduras frescas de productores locales.</p>
+                </article>
+
+                <article class="producto-card">
+                    <img src="img/3.jpeg" alt="Productos sin tacc">
+                    <h3>Productos de Almacén</h3>
+                    <p>Dulces, conservas, aceite de oliva, miel y más productos artesanales.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ENCONTRANOS ==================== -->
+    <section id="encontranos">
+        <div class="contenedor">
+            <div class="seccion-titulo">
+                <h2>Encontranos</h2>
+                <p>Te esperamos en nuestro local</p>
+            </div>
+
+            <div class="encontranos-grid">
+                <div class="info-cards">
+                    <!-- REEMPLAZAR: Completar con tus datos -->
+                    
+                    <div class="info-card">
+                        <div class="info-card-icon">📍</div>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Colón 1177 - Crdoba</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">🕐</div>
+                        <div>
+                            <h3>Horarios de Atención</h3>
+                            <p>Lunes a Viernes: 8:00 - 22:00</p>
+                            <p>Sábados y Domingos: 10:00 - 22:00</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-icon">📱</div>
+                        <div>
+                            <h3>Contacto</h3>
+                            <p>WhatsApp: <a href="https://wa.me/5493517733507" target="_blank">+54 9 3517 73-3507</a></p>
+                            <p>Teléfono: <a href="tel:+5493517733507">351773507</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Redes sociales -->
+                    <div class="redes-sociales">
+                        <!-- REEMPLAZAR: Agregar tus links -->
+                        <a href="https://instagram.com/TU_USUARIO" target="_blank" class="red-social">
+                            📸 Instagram
+                        </a>
+                        <a href="https://wa.me/5493517733507" target="_blank" class="red-social">
+                            💬 WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mapa de Google -->
+                <div class="mapa-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1791952340272!2d-64.19924139999999!3d-31.409188600000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432998b6ca56201%3A0x59642ebd175eafa0!2sSaramb%C3%AD%20-%20Almac%C3%A9n%20Natural!5e0!3m2!1ses!2sar!4v1775883962633!5m2!1ses!2sar" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="contenedor">
+            <!-- REEMPLAZAR: Agregar tu logo -->
+            <img src="img/logo-sarambi.png" alt="Sarambi" class="footer-logo">
+            
+            <div class="footer-redes">
+                <!-- REEMPLAZAR: Agregar tus links -->
+                <a href="https://www.instagram.com/sarambi.almacen.natural/" target="_blank">📸</a>
+                <a href="https://wa.me/5493517733507" target="_blank">💬</a>
+            </div>
+            
+            <p>&copy; 2024 Sarambi - Dietética y Almacén Natural. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== WHATSAPP FIJO ==================== -->
+    <!-- REEMPLAZAR: Cambiar el número de teléfono -->
+    <a href="https://wa.me/5493517733507" target="_blank" class="whatsapp-fijo" title="Escribinos por WhatsApp">
+        💬
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
+
+<!--git init           → Inicializar un proyecto con Git
+git add archivo    → Seleccionar qué archivos guardar
+git commit -m ""   → Guardar un "punto de restauración"
+git push           → Subir cambios a GitHub
+
+cada vez al hacer cambios: Editás tu código → git add . → git commit -m "qué cambiaste" → git push
+-->

@@ -1,0 +1,7 @@
+# Archivos que no necesitamos
+.DS_Store
+Thumbs.db
+
+
+# Imágenes placeholder (si tenés imágenes temporales)
+# img/*.jpg (descomentá esto si querés ignorar las fotos)
